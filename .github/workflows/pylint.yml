@@ -1,0 +1,12 @@
+name: PEP8 Test
+
+on: [push]
+
+jobs:
+  PEP8_Test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: PEP8
+      uses: andymckay/pycodestyle-action@0.1.3
