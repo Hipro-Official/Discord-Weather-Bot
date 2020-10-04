@@ -64,7 +64,7 @@ In the code, the search is set at the Chome level, but it is also possible to se
 
 When using the APIs, please comply with the restrictions of each API provider.<br>
 
-### 注意事項
+### Note
 You are free to modify the code, but if you modify all or part of the code in this Bot, please insert the following information as your license.
 ```
 Code provided by Hipro
