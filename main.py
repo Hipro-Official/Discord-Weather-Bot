@@ -96,14 +96,14 @@ async def loop():
 
     if now == '6:00':
         for i in range(len(citylist['city'])):
-            geoinfo = yahoogeocode.yahoogeocoding(citylist['city'][i])
-        weatherinfo = openweathermap.openweathermap(geoinfo[1])
+            geoinfo = yahoogeocode(citylist['city'][i])
+        weatherinfo = openweathermap(geoinfo[1])
         embed = createembed(4, '', citylist['city'][i], weatherinfo, '')
         await channel.send(embed=embed)
     elif now == '19:00':
         for i in range(len(citylist['city'])):
-            geoinfo = yahoogeocode.yahoogeocoding(citylist['city'][i])
-        weatherinfo = openweathermap.openweathermap(geoinfo[1])
+            geoinfo = yahoogeocode(citylist['city'][i])
+        weatherinfo = openweathermap(geoinfo[1])
         embed = createembed(5, '', citylist['city'][i], weatherinfo, '')
         await channel.send(embed=embed)
 

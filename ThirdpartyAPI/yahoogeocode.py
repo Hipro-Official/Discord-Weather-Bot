@@ -27,12 +27,8 @@ def yahoogeocode(address):
     req_url = api_end_point + '?' + encoded_params
     try:
         response = u_agent.open(req_url)
-    except urllib.error.HTTPError as err:
-        return 1, 'HTTP ERROR ' + err.reasonz
-    except socket.timeout as err:
-        return 1, 'SOCKET.TIMEOUT'
-    except Exception as err:
-        return 1, 'UNKNOWN ERROR'
+    except Exception as e:
+        return 1, e
     else:
         pass
 
