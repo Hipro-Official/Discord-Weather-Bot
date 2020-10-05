@@ -94,7 +94,7 @@ async def loop():
     now = datetime.datetime.now(pytz.timezone('Asia/Tokyo')).strftime('%H:%M')
     channel = client.get_channel(int(channel_id_weather))
 
-    if now == '6:00':
+    if now == '06:00':
         for i in range(len(citylist['city'])):
             geoinfo = yahoogeocode(citylist['city'][i])
         weatherinfo = openweathermap(geoinfo[1])
